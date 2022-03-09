@@ -6,22 +6,35 @@
 	border: 0;
 	box-sizing: border-box;
 }
+
 a {
 	text-decoration: none;
 }
-ul, ol, li {
+
+ul,
+ol,
+li {
 	list-style: none;
 }
+
 img {
 	vertical-align: top;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
-html, body {
+
+html,
+body {
 	height: 100%;
-	font-family: 'Rubik'; 
+	font-family: 'Rubik';
 	font-size: 12px;
 	color: #616161;
 }
@@ -40,4 +53,71 @@ html, body {
 [class*="__container"] {
 	max-width: 1057px;
 	margin: 0 auto;
+}
+
+.header__container {
+	display: flex;
+	min-height: 114px;
+	align-items: center;
+}
+
+.header__menu {
+	flex: 1 1 auto;
+}
+
+.header__button {
+	flex: 0 0 252px; 
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0px 40px 0px 0px;
+}
+
+.menu__list {
+	display: flex;
+}
+
+.menu__item {
+	margin: 0px 40px 0px 0px;
+}
+
+.menu__link {
+	font-family: Raleway;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 1.2;
+	color: #000;
+	letter-spacing: 1px;
+}
+
+.button {
+	display: inline-block;
+	color: #FCFDFE;
+	background-color: #EC5863;
+	border-radius: 5px;
+	font-family: Raleway;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	padding: 14px 30px;
+	transition: background-color 0.3s ease 0s;
+}
+
+.button:hover {
+	background-color: #ee737b;
+}
+
+.button_blue {
+	background-color: #4285F4;
+}
+
+.button_blue:hover {
+	background-color: #6298f0;
 }
